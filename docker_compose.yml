@@ -1,0 +1,38 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:13.3
+    env_file:
+      - ./.env
+    ports:
+      - "5432:5432"
+
+  api:
+    build:
+      context: ./apps/api/
+      dockerfile: ./Dockerfile
+    depends_on:
+      - postgres
+    ports:
+      - "8000:8000"
+    command: "sh /app/entrypoint.sh"
+    env_file:
+      - ./.env
+    volumes:
+      - ./apps/api/app:/app/
+
+  bot:
+    build:
+      context: ./apps/bot/
+      dockerfile: ./Dockerfile
+
+    depends_on:
+      - postgres
+      - api
+    ports:
+      - "443:443"
+    command: "python main.py"
+    env_file:
+      - ./.env
+    volumes:
+      - ./apps/bot/app:/app/
