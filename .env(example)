@@ -1,3 +1,14 @@
+# Это для БД
 POSTGRES_DB=""
 POSTGRES_USER=""
 POSTGRES_PASSWORD=""
+
+# Это для телеграм-бота
+BOT_TOKEN=""
+
+# Это для API-приложение
+DB_NAME=""
+DB_PORT=""
+DB_USER=""
+DB_PASS=""
+DB_HOST=""
