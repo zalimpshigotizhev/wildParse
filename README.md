@@ -4,12 +4,12 @@ _Полностью асинхронное приложение с API и тел
 ### **Стек** <br>
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)  ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) <br>
 ### Python (Зависимости)
-- FastAPI[full] - "^0.115.6"
-- SQLAlchemy - "^2.0.37"
-- APSchedular - "^3.11.0"
-- Aiogram - "^3.17.0"
-- Uvicorn - "^0.34.0"
-- Alembic - "^1.14.1"
+- `FastAPI[full] - "^0.115.6"`
+- `SQLAlchemy - "^2.0.37"`
+- `APSchedular - "^3.11.0"`
+- `Aiogram - "^3.17.0"`
+- `Uvicorn - "^0.34.0"`
+- `Alembic - "^1.14.1"`
 
 ### Как установить?
 
